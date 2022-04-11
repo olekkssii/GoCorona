@@ -1,2 +1,2 @@
 # GoCorona
-[ez_project]https://github.com/olekkssii/GoCorona.git
+[ez_project]https://olekssii.github.io/GoCorona/
