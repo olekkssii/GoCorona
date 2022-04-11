@@ -1,0 +1,15 @@
+.footer_items {
+    width: 375px;
+    margin: 0 auto 46px;
+    display: flex;
+    justify-content: space-between;
+
+    @include on-big_phone {
+        display: block;
+        margin: 0 auto;
+        width: 165px;
+    }
+}
+.footer_items-btn {
+    margin-top: 4px;
+}

@@ -1,0 +1,103 @@
+.text-block {
+    margin-top: 50px;
+
+    &--header {
+        margin-bottom: 150px;
+        margin-right: 80px;
+
+        @include on-tablet {
+            text-align: center;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    &--stay-safe {
+        margin: auto 0 auto 150px;
+
+        @include on-mini_laptop {
+            margin: 0;
+            margin-left: 50px;
+        }
+        @include on-tablet {
+            margin-left: 20px;
+            margin-right: 40px;
+        }
+        @include on-big_phone {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    &--experts {
+
+        @include on-tablet {
+            margin: 0 auto;
+        text-align: center;
+        }
+        
+    }
+}
+
+
+.text-block-title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    margin: 0 0 12px 0 ;
+
+    @include on-mini_laptop {
+        font-size: 38px;
+    }
+    @include on-big_phone {
+        font-size: 26px;
+    }
+    &--stay-safe  {
+        @include on-mini_laptop {
+            font-size: 38px;
+        }
+    }
+
+    &--experts {
+        @include on-mini_laptop {
+            font-size: 38px;
+        }
+    }
+}
+
+
+.text-block_last-word {
+    color: #4285F4;
+
+    &--registration {
+        color: #EC5863;
+    }
+}
+
+
+.text-block-sub_title {
+    color: #616161;
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 24px;
+
+    @include on-big_phone {
+        font-size: 10px;
+    }
+
+    &--stay-safe {
+        font-size: 13px;
+
+        @include on-phone {
+            font-size: 10px;
+        }
+    }
+
+    &--experts {
+        @include on-tablet {
+            font-style: 12px;
+        }
+    }
+}

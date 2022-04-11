@@ -1,0 +1,142 @@
+.section_experts {
+    margin-bottom: 80px;
+}
+
+.experts-statistic { 
+    position: relative;
+    width: 100%;
+    max-width: 654px;
+    height: 117px;
+    margin: 0 auto 80px;
+
+    @include on-tablet {
+        margin-bottom: 30px;
+    }
+
+    @include on-big_phone {
+        display: none;
+    }
+}
+.experts-statistic_items {
+    display: flex;
+    justify-content: space-around;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+    border-radius: 16px;
+    text-align: center;
+
+    width: 100%;
+    max-width: 654px;
+    height: 117px;
+   
+    position: relative;
+    z-index: 2;
+}
+
+.experts-statistic_item {
+    margin: auto 0;
+    z-index: 2;
+}
+
+.experts-statistic_item-top_text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.14em;
+    color: #EC5863;
+    font-family: 'Rubik', sans-serif;
+}
+
+.experts-statistic_item-bottom_text {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.37em;
+    text-transform: uppercase;
+    color: #000000;
+    font-family: 'Rubik', sans-serif;
+}
+
+.experts-statistic_item-bg {
+    position: absolute;
+    z-index: 1;
+    background-color: #EC5863;
+    border-radius: 30px;
+
+    @include on-tablet {
+        display: none;
+    }
+
+    &--1 {
+        width: 65px;
+        height: 65px;
+        border-radius: 16px;
+        transform: rotate(-30deg);
+        top: 75px;
+        left: -20px;
+    }
+    &--2 {
+        width: 95px;
+        height: 95px;
+        transform: rotate(105deg);
+        top: -40px;
+        left: 230px;
+    }
+    &--3 {
+        width: 127px;
+        height: 127px;
+        transform: rotate(-30deg);
+        top: 0;
+        right: -60px;
+    }
+}
+
+.experts_talk-to-you {
+    display: flex;
+    margin-left: 92px;
+
+    @include on-mini_laptop {
+        margin-left: 65px;
+    }
+
+    @include on-tablet {
+        margin-left: 40px;
+        padding-bottom: 30px;
+    }
+    @include on-phone {
+        margin-left: 0;
+    }
+}
+.experts_talk-to-you_video {
+    width: 520px;
+    height: 285px;
+    background-color: #fff;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
+    margin-bottom: 115px;
+    @include on-tablet {
+        display: none;
+    }
+}
+
+.experts_talk-to-you_video-player {
+    position: relative;
+    left: -190px;
+    top: 125px;
+}
+
+.experts_talk-to-you_watch-video {
+    width: 150px;
+    height: 45px;
+    background-color: rgb(134, 177, 220);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+
+    .experts_talk-to-you_watch-video_img {
+        opacity: .3;
+    }
+}

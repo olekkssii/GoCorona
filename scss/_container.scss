@@ -1,0 +1,60 @@
+.container {
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    padding: 0 55px;
+    margin: 0 auto;
+    
+    &--header {
+        background-color: #FAFBFD;
+        position: relative;
+        z-index: -2;
+
+        ::before {
+            content: "";
+            width: 295px;
+            height: 733px;
+            background-color: #EC5863;
+            border-radius: 30px 0px 0px 30px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+
+            @include on-tablet {
+                display: none;
+            }
+
+           
+        }
+        @include on-big_phone {
+            padding: 0 15px;
+        }
+    }
+    &--experts {
+        padding-top: 100px;
+        background-color: #FAFBFD;
+
+        @include on-tablet {
+             padding-top: 60px;
+
+        }
+
+        @include on-big_phone {
+            padding: 40px 20px 0;
+        }
+    }
+
+    &--stay_safe {
+        padding: 0;
+    }
+
+    &--healthcare {
+        @include on-tablet {
+            padding: 0 40px;
+        }
+        @include on-big_phone {
+            padding: 0 10px;
+        }
+    }
+}

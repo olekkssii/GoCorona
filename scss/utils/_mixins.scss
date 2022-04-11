@@ -1,0 +1,30 @@
+@mixin on-laptop() {
+    @media(max-width: 1279px) {
+        @content;
+    }
+}
+
+@mixin on-mini_laptop {
+    @media (max-width: 1124px) {
+        @content;
+    }
+    
+}
+
+@mixin on-tablet {
+    @media (max-width: 960px) {
+        @content;
+    }
+}
+
+@mixin on-big_phone {
+    @media (max-width: 602px) {
+        @content;
+    }
+}
+
+@mixin on-phone {
+    @media (max-width: 502px) {
+        @content;
+    }
+}
