@@ -1,2 +1,3 @@
 GoCorona
-[ez_project]https://olekssii.github.io/GoCorona/
+[ez_project]_https://olekssii.github.io/GoCorona/
+
